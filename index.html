@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sai College of Education, Jadla is a premier institution for teacher education in Punjab."
+    />
+    <meta
+      name="keywords"
+      content="Sai College, Education, Teacher Training, B.Ed, Jadla, Punjab"
+    />
+
     <title>Sai College of Education, Jadla</title>
     <link
       rel="icon"
@@ -20,11 +29,19 @@
     <!-- Font Awesome -->
     <style>
       html {
-  scroll-behavior: smooth;
-        
-      body {
-        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
       }
+
+      body {
+         font-family: 'Roboto', sans-serif;
+      }
+      /* Centering the title */
+    .text-justify {
+      font-family: 'Lora', serif;
+      text-align: justify;
+      font-size: 1.2rem;
+      color: #333;
+    }
 
       .logo {
         width: 60px;
@@ -94,6 +111,24 @@
       .card-body h5 {
         font-weight: 600;
         color: #cc6600;
+      }
+      /* Scroll to top button style */
+      #scrollTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #222;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        display: none; /* Hide the button by default */
+      }
+
+      #scrollTopBtn:hover {
+        background-color: orange;
       }
     </style>
   </head>
@@ -207,65 +242,52 @@
           height="89"
         />
       </div>
-      <p class="text-justify">
-        <center><b>Sai College of Education, Jadla (Nawanshahr): A Hub for Excellence in
-          Teacher Education </b></center> <br>Sai College of Education, situated in the picturesque
-        town of Jadla in Nawanshahr district, stands as a beacon of educational
-        excellence in the field of teacher education. Nestled conveniently on
-        the main National Highway that connects Chandigarh to Jalandhar, the
-        college is strategically located near the vibrant city of Nawanshahr.
-        Its location on this prominent highway makes it easily accessible to
-        students from various regions of Punjab and beyond. The college is
-        committed to nurturing and developing the next generation of educators
-        through its focused B.Ed. (Bachelor of Education) program. This program
-        is offered in a co-educational setting, ensuring that both male and
-        female students have an equal opportunity to develop their teaching
-        skills. With its modern approach to education, Sai College of Education
-        has earned a reputation for producing skilled, compassionate, and
-        innovative educators who are well-equipped to make a positive impact in
-        the field of education.
-      </p>
+       <div class="container">
+    <!-- Title Section -->
+    <div class="text-justify">
+      <center>
+        <b>Sai College of Education, Jadla (Nawanshahr): A Hub for Excellence in Teacher Education</b>
+      </center>
+      <br />
+      Sai College of Education, situated in the picturesque town of Jadla in Nawanshahr district, stands as a beacon of educational excellence in the field of teacher education. Nestled conveniently on the main National Highway that connects Chandigarh to Jalandhar, the college is strategically located near the vibrant city of Nawanshahr. Its location on this prominent highway makes it easily accessible to students from various regions of Punjab and beyond. The college is committed to nurturing and developing the next generation of educators through its focused B.Ed. (Bachelor of Education) program. This program is offered in a co-educational setting, ensuring that both male and female students have an equal opportunity to develop their teaching skills. With its modern approach to education, Sai College of Education has earned a reputation for producing skilled, compassionate, and innovative educators who are well-equipped to make a positive impact in the field of education.
     </div>
 
     <!-- Features Section -->
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Our Mission</h5>
-              <p class="card-text">
-                To imbibe in our prospective teachers with Dedication,
-                Diligence, Sense of Discrimination and Dignity of teaching
-                profession.
-              </p>
-            </div>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Our Mission</h5>
+            <p class="card-text">
+              To imbibe in our prospective teachers with Dedication, Diligence, Sense of Discrimination and Dignity of teaching profession.
+            </p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Our Features</h5>
-              <p class="card-text">
-                Apart from providing education, the college inculcates a sense
-                of integrity, efficiency, and feeling of co-operativeness...
-              </p>
-            </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Our Features</h5>
+            <p class="card-text">
+              Apart from providing education, the college inculcates a sense of integrity, efficiency, and feeling of co-operativeness...
+            </p>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Activities</h5>
-              <p class="card-text">
-                Our students participate in cultural functions of various
-                colleges and have been bagging many prizes.
-              </p>
-            </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Activities</h5>
+            <p class="card-text">
+              Our students participate in cultural functions of various colleges and have been bagging many prizes.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- Embed Google Map -->
     <iframe
@@ -284,9 +306,34 @@
       <p>&copy; 2025 Sai College of Education, Jadla. All Rights Reserved.</p>
       <p>Designed by: Adrees</p>
     </footer>
-
+    <button id="scrollTopBtn" title="Go to top">&#x1F446;</button>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Get the button element
+      let scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      // Show the button when scrolling down 200px
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          scrollTopBtn.style.display = "block";
+        } else {
+          scrollTopBtn.style.display = "none";
+        }
+      };
+
+      // Scroll to top function
+      scrollTopBtn.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scrolling to top
+        });
+      };
+    </script>
   </body>
 </html>
