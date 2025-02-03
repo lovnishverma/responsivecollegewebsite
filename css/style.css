@@ -8,6 +8,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Stylish Heading */
+h1 {
+  font-family: "Poppins", sans-serif;  /* Modern and professional font */
+  font-weight: 700;  /* Bold for emphasis */
+  font-size: 2.5rem;  /* Adjust size */
+  text-transform: uppercase;  /* Makes it look structured */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient effect */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text gradient visible */
+  letter-spacing: 1.5px; /* Spacing for elegance */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle depth */
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
 /* Logo image size */
 .logo {
   width: 60px;
